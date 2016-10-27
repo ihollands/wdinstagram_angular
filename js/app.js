@@ -13,14 +13,15 @@
 
 function Router($stateProvider){
   $stateProvider
-    .state("instaIndex", {
+    .state("index", {
+      template: "hi",
       url: "/",
-      templateUrl: "js/ng-views/index.html",
       controller: "InstaIndexController",
       controllerAs: "vm"
     })
 }
 
 function InstaIndexControllerFunction(){
+  console.log("stuff");
   this.posts = [{title: "Hey Show Up"}]
 }
